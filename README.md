@@ -22,7 +22,7 @@ Unlike traditional graph representations where edges might be distinct objects m
 Modifications Summary
 This version of the code has moved away from a separate UnweightedGraph class.
 
-* **WeightedGraph is now the primary concrete graph implementation and extends Graph.
-* **WeightedGraph handles both addEdge(source, dest, weight) and addEdge(source, dest). This allows it to serve as the graph structure for both weight-sensitive algorithms and weight-agnostic algorithms (like BFS and DFS).
-* **Search algorithm classes (BreadthFirstSearch, DepthFirstSearch) now expect a Graph<T> in their constructors, making them compatible with WeightedGraph.
-* **This refactoring simplifies the class hierarchy while maintaining the core functionality and the vertex-centric design.
+* WeightedGraph is now the primary concrete graph implementation and extends Graph.
+* WeightedGraph handles both addEdge(source, dest, weight) and addEdge(source, dest). This allows it to serve as the graph structure for both weight-sensitive algorithms and weight-agnostic algorithms (like BFS and DFS).
+* Search algorithm classes (BreadthFirstSearch, DepthFirstSearch) now expect a Graph<T> in their constructors, making them compatible with WeightedGraph.
+* This refactoring simplifies the class hierarchy while maintaining the core functionality and the vertex-centric design.
